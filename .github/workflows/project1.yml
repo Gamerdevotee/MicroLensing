@@ -20,3 +20,55 @@ import sympy
 data1 = np.loadtxt('proj1data1.txt')
 data2 = np.loadtxt('proj1data2.txt')
 data3 = np.loadtxt('proj1data3.txt')
+
+
+# What Yoon, Aidan, and Mike worked on
+
+# Import Libraries 
+
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+from scipy import optimize
+import sympy
+sympy.init_printing()
+
+
+# Read datasets into notebook
+
+data1 = np.loadtxt('proj1data1.txt')
+data2 = np.loadtxt('proj1data2.txt')
+data3 = np.loadtxt('proj1data3.txt')
+
+
+# Assigning x and y variables for datasets
+
+data1x = data1[:,0]
+data2x = data2[:,0]
+data3x = data3[:,0]
+
+data1y = (data1[:,1]) * (-1)
+data2y = (data2[:,1]) * (-1)
+data3y = (data3[:,1]) * (-1)
+
+# plotting dataset 1
+
+plt.figure()
+plt.plot(data1x,data1y)
+plt.plot(data1x,data1y, 'r.')
+plt.ylim(-17.5,-13.5)
+
+# plotting dataset 2
+
+plt.figure()
+plt.plot(data2x,data2y)
+plt.plot(data2x,data2y, 'r.')
+plt.ylim(-19,-17)
+
+
+# plotting dataset 3
+
+plt.figure()
+plt.plot(data3x,data3y)
+plt.plot(data3x,data3y, 'r.')
+plt.ylim(-14,-11.5)

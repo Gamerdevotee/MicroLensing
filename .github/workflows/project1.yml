@@ -9,5 +9,14 @@ name: Micro Lensing group 2
 
 http://ogle.astrouw.edu.pl/ogle4/ews/2019/blg-0148.html
 http://ogle.astrouw.edu.pl/ogle4/ews/2018/blg-0164.html
-http://ogle.astrouw.edu.pl/ogle4/ews/2019/blg-0017.html
 http://ogle.astrouw.edu.pl/ogle4/ews/2019/blg-1307.html
+
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+from scipy import optimize
+import sympy
+
+data1 = np.loadtxt('proj1data1.txt')
+data2 = np.loadtxt('proj1data2.txt')
+data3 = np.loadtxt('proj1data3.txt')
